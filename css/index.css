@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap');
+
+.container {
+    margin: 0 0 0 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+.user-view {
+    background-color: none;
+    padding: 32px 32px 17px 32px !important;
+    display: flex;
+    justify-content: center;
+}
+
+.row .title {
+    padding: 0px;
+}
+
+.title-content {
+    font-size: 55px;
+    font-weight: 300;
+    font-size: 4.2rem;
+    padding-left: 90px;
+    color: #586270;
+}
+
+.row .cards {
+    padding-left: 70px;
+}
+
+.conteudo .container .row .card{
+    margin: 20px 25px 20px 25px;
+    padding: 0px;
+}
+
+span.badge {
+    float: inherit !important;
+}
+
+span.badge.new {
+    padding: 5px 15px 5px 15px;
+}
+
+/* Deixa a primeira letra em maiúsculo*/
+.capitalize:first-letter { 
+    text-transform: capitalize; 
+} 
+
+.report {
+    display: flex;
+    justify-content: center;
+}
+
+i.material-icons {
+    color: tomato;
+}
+
+
+header,
+main,
+footer {
+    padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+
+    header,
+    main,
+    footer {
+        padding-left: 0;
+    }
+}

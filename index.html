@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Compiled and minified CSS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.4/build/css/themes/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <title>Pokédex</title>
+  <link rel="shortcut icon" type="image/svg" href="assets/icon/ball.svg" />
+</head>
+
+<body>
+
+
+
+  <section id="pokemons">
+
+    <!-- Navbar e botão lateral do mobile -->
+    <nav class="show-on-medium-and-down hide-on-med-and-up">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo center">Pokédex</a>
+        <ul id="nav-mobile" class="left">
+          <!-- Botão do mobile -->
+          <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Topo da barra lateral -->
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+      <li>
+        <div class="user-view center-align">
+          <div>
+            <a href="#"><img class=" responsive-img" width="100px" src="assets/icon/ball.svg"></a>
+          </div>
+        </div>
+      </li>
+
+      <li><a class="waves-effect" href="#!"><i class="material-icons">cloud</i>Pokemons</a></li>
+
+      <li>
+        <div class="divider"></div>
+      </li>
+
+      <li><a class="subheader">Listar</a></li>
+      <li><a class="waves-effect modal-trigger" href="#naturezas"><i class="material-icons">cloud</i>Naturezas</a></li>
+      <li><a class="waves-effect modal-trigger" href="#ovos"><i class="material-icons">cloud</i>Ovos</a></li>
+      <li><a class="waves-effect modal-trigger" href="#items"><i class="material-icons">cloud</i>Items</a></li>
+    </ul>
+
+    <!-- Estrutura do modal da Natureza -->
+    <div id="naturezas" class="modal">
+      <div class="modal-content">
+        <h4>Naturezas</h4>
+        <p>Aqui vai as naturezas</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+      </div>
+    </div>
+
+    <!-- Estrutura do modal dos ovos -->
+    <div id="ovos" class="modal">
+      <div class="modal-content">
+        <h4>Ovos</h4>
+        <p id="error"></p>
+        <table class="highlight responsive-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Pokémons</th>
+            </tr>
+          </thead>
+          <tbody id="list-eggs">
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+      </div>
+    </div>
+
+    <!-- Estrutura do modal dos items -->
+    <div id="items" class="modal">
+      <div class="modal-content">
+        <h4>Items</h4>
+        <p>Aqui vai os items</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+      </div>
+    </div>
+
+    <main class="container">
+      <div class="row">
+        <!-- Conteúdo -->
+        <div class="conteudo">
+          <div class="container">
+            <div class="row">
+              <div class="col l12 title">
+                <h1 class="title-content header">Pokémons</h1>
+                <div class="divider"></div>
+              </div>
+            </div>
+            <div class="row cards">
+              <!-- Card -->
+              <div class="card medium col s12 m6 l3 ">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator responsive-img" height="10px" src="assets/img/001.jpg">
+                </div>
+                <div class="card-content center-align">
+                  <span class="card-title activator grey-text text-darken-1">#001</span>
+                  <p><a class="card-title activator grey-text text-darken-4" href="#">Bulbasaur</a></p>
+                  <span class="new badge red" data-badge-caption="">tipo2</span>
+                  <span class="new badge blue" data-badge-caption="">tipo1</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+
+  </section>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>
