@@ -1,3 +1,3 @@
-## Técnologias Usada 
+## Tecnologias Usada 
 >- Materialize
 >- Axios
