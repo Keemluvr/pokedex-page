@@ -1,4 +1,4 @@
-## Tecnologias Usada 
+## Tecnologias Usadas
 >- Materialize
 >- Axios
 >- GitHub Pages
