@@ -1,7 +1,7 @@
 // Variáveis globais
 const API = axios.create({
-    //baseURL: 'https://api-pokedex-lab.herokuapp.com/api/',
-    baseURL: 'http://localhost:2080/api/',
+    baseURL: 'https://api-pokedex-lab.herokuapp.com/api/',
+    //baseURL: 'http://localhost:2080/api/',
     timeout: 1000,
     headers: {
         'X-Custom-Header': 'foobar'
