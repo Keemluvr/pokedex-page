@@ -96,6 +96,16 @@
       </div>
     </div>
 
+    <!-- Estrutura do modal dos pokémons -->
+    <div id="pokemon" class="modal modal-fixed-footer">
+      <div id="info-pokemon"class="modal-content">
+        <!-- Descrição do pokémon -->
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+      </div>
+    </div>
+
     <main class="container">
       <div class="row">
         <!-- Conteúdo -->
@@ -107,20 +117,8 @@
                 <div class="divider"></div>
               </div>
             </div>
-            <div class="row cards">
-              <!-- Card -->
-              <div class="card medium col s12 m6 l3 ">
-                <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator responsive-img" height="10px" src="assets/img/001.jpg">
-                </div>
-                <div class="card-content center-align">
-                  <span class="card-title activator grey-text text-darken-1">#001</span>
-                  <p><a class="card-title activator grey-text text-darken-4" href="#">Bulbasaur</a></p>
-                  <span class="new badge red" data-badge-caption="">tipo2</span>
-                  <span class="new badge blue" data-badge-caption="">tipo1</span>
-                </div>
-
-              </div>
+            <div class="row cards" id="list-pokemons">
+              <!-- Cards dos pokemons -->
             </div>
           </div>
         </div>
