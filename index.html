@@ -16,8 +16,6 @@
 
 <body>
 
-
-
   <section id="pokemons">
 
     <!-- Navbar e botão lateral do mobile -->
@@ -57,7 +55,18 @@
     <div id="naturezas" class="modal">
       <div class="modal-content">
         <h4>Naturezas</h4>
-        <p>Aqui vai as naturezas</p>
+        <p id="error"></p>
+        <table class="highlight responsive-table">
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Incrementa</th>
+              <th>Decrementa</th>
+            </tr>
+          </thead>
+          <tbody id="list-natures">
+          </tbody>
+        </table>
       </div>
       <div class="modal-footer">
         <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
@@ -89,7 +98,17 @@
     <div id="items" class="modal">
       <div class="modal-content">
         <h4>Items</h4>
-        <p>Aqui vai os items</p>
+        <p id="error"></p>
+        <table class="highlight responsive-table">
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Participação em evoluções</th>
+            </tr>
+          </thead>
+          <tbody id="list-items">
+          </tbody>
+        </table>
       </div>
       <div class="modal-footer">
         <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
@@ -98,7 +117,7 @@
 
     <!-- Estrutura do modal dos pokémons -->
     <div id="pokemon" class="modal modal-fixed-footer">
-      <div id="info-pokemon"class="modal-content">
+      <div id="info-pokemon" class="modal-content">
         <!-- Descrição do pokémon -->
       </div>
       <div class="modal-footer">
