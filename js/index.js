@@ -165,7 +165,7 @@ API.get('/nature')
         for (i = 0; i < response.data.length; i++) {
             document.getElementById("list-natures").innerHTML +=
                 `<tr>
-                    <td class="capitalize">${response.data[i].name}</td>
+                    <td>${response.data[i].name}</td>
                     <td>${response.data[i].attributeIncrease}</td>
                     <td>${response.data[i].attributeDecrease}</td>
                 </tr>
@@ -190,7 +190,7 @@ API.get('/nature')
         for (i = 0; i < response.data.length; i++) {
             document.getElementById("list-items").innerHTML +=
                 `<tr>
-                    <td class="capitalize">
+                    <td>
                         <img src="https://img.pokemondb.net/sprites/items/${response.data[i].name}.png" class="imagem-pokemon">
                         ${response.data[i].name}
                     </td>
